@@ -1,0 +1,48 @@
+# Python virtual environment (uv)
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS system files
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ComfyUI directory & runtime data
+ComfyUI/
+custom_nodes/
+
+# Model binaries & checkpoints (any location)
+*.safetensors
+*.gguf
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+*.engine
+
+# Generation outputs & inputs
+output/
+input/
+temp/
+cache/
+logs/
+*.mp4
+*.gif
+*.png
+*.jpg
+*.webp
+
+# Keep .gitkeep files
+!.gitkeep
