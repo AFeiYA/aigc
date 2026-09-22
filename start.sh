@@ -35,13 +35,16 @@ export PYTORCH_ENABLE_MPS_FALLBACK=1
 export KMP_DUPLICATE_LIB_OK=TRUE
 
 PORT=8188
-URL="http://127.0.0.1:${PORT}"
+LAN_IP=$(ipconfig getifaddr en0 2>/dev/null || ipconfig getifaddr en1 2>/dev/null || echo "127.0.0.1")
+URL_LOCAL="http://127.0.0.1:${PORT}"
+URL_LAN="http://${LAN_IP}:${PORT}"
 
 echo -e "${BLUE}======================================================${NC}"
 echo -e "${GREEN}      启动本地 AIGC 工作流服务 (ComfyUI)...${NC}"
 echo -e "${BLUE}======================================================${NC}"
 echo -e "  硬件加速:  ${GREEN}Apple Silicon Metal (MPS)${NC}"
-echo -e "  本地地址:  ${BLUE}${URL}${NC}"
+echo -e "  本机地址:  ${BLUE}${URL_LOCAL}${NC}"
+echo -e "  局域网/API: ${CYAN}${URL_LAN}${NC}"
 echo -e "  运行模式:  ${YELLOW}--force-fp16 (低显存高速半精度)${NC}"
 echo -e "${BLUE}======================================================${NC}"
 
@@ -49,15 +52,15 @@ echo -e "${BLUE}======================================================${NC}"
 (
     sleep 3
     if command -v open &> /dev/null; then
-        echo -e "${GREEN}--> 正在自动打开浏览器: ${URL}${NC}"
-        open "$URL" || true
+        echo -e "${GREEN}--> 正在自动打开浏览器: ${URL_LOCAL}${NC}"
+        open "$URL_LOCAL" || true
     fi
 ) &
 
-# 启动 ComfyUI 并透传所有额外命令行参数
+# 启动 ComfyUI 监听 0.0.0.0 允许局域网设备/API请求调用
 exec python ComfyUI/main.py \
     --force-fp16 \
     --preview-method auto \
-    --listen 127.0.0.1 \
+    --listen 0.0.0.0 \
     --port "$PORT" \
     "$@"
