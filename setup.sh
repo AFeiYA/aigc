@@ -97,14 +97,15 @@ echo -e "\n${BLUE}[5/6] 部署 AIGC 图片/视频生成关键扩展插件...${NC
 CUSTOM_NODES_DIR="ComfyUI/custom_nodes"
 mkdir -p "$CUSTOM_NODES_DIR"
 
-declare -A NODES=(
-    ["ComfyUI-Manager"]="https://github.com/ltdrdata/ComfyUI-Manager.git"
-    ["ComfyUI-GGUF"]="https://github.com/city96/ComfyUI-GGUF.git"
-    ["ComfyUI-VideoHelperSuite"]="https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git"
+NODES=(
+    "ComfyUI-Manager|https://github.com/ltdrdata/ComfyUI-Manager.git"
+    "ComfyUI-GGUF|https://github.com/city96/ComfyUI-GGUF.git"
+    "ComfyUI-VideoHelperSuite|https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git"
 )
 
-for NODE_NAME in "${!NODES[@]}"; do
-    NODE_URL="${NODES[$NODE_NAME]}"
+for ITEM in "${NODES[@]}"; do
+    NODE_NAME="${ITEM%%|*}"
+    NODE_URL="${ITEM##*|}"
     TARGET_PATH="$CUSTOM_NODES_DIR/$NODE_NAME"
     if [ ! -d "$TARGET_PATH" ]; then
         echo -e "  -> 正在安装插件: ${GREEN}$NODE_NAME${NC}..."
