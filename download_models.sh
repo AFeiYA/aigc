@@ -103,7 +103,7 @@ run_task() {
     case $task_id in
         1)
             echo -e "${YELLOW}>>> [任务 1] 下载 Flux.1 必备组件 (VAE + 文本编码器)...${NC}"
-            download_file "${HF_DOMAIN}/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors" \
+            download_file "${HF_DOMAIN}/camenduru/FLUX.1-dev/resolve/main/ae.safetensors" \
                           "$COMFY_MODELS/vae" "ae.safetensors"
             download_file "${HF_DOMAIN}/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors" \
                           "$COMFY_MODELS/clip" "clip_l.safetensors"
