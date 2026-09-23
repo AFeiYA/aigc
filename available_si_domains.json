@@ -1,14 +1,112 @@
 {
-  "timestamp": "2026-09-23 21:00:18",
+  "updated_at": "2026-09-23 21:13:00",
+  "tld": ".si (Super Intelligence / Slovenia)",
+  "verified_via": "Official Authoritative Root Nameserver (b.dns.si NXDOMAIN)",
   "available_domains": [
-    "sicapital.co",
-    "simodel.ai",
-    "siventures.ai",
-    "sinetwork.ai",
-    "sicapital.ai",
-    "siresearch.ai",
-    "sistudio.co",
-    "sistudio.io",
-    "silayer.ai"
+    {
+      "domain": "nextai.si",
+      "meaning": "Next AI / 下一代超级智能",
+      "value_tier": "S 级 (极短、未来感、顶级概念)"
+    },
+    {
+      "domain": "reasoningai.si",
+      "meaning": "Reasoning AI / 推理与慢思考超级智能 (对标 o1/o3 趋势)",
+      "value_tier": "S 级 (当前 AI 核心风口)"
+    },
+    {
+      "domain": "multimodalai.si",
+      "meaning": "Multimodal AI / 多模态超级智能",
+      "value_tier": "S 级 (行业基础赛道)"
+    },
+    {
+      "domain": "supercopilot.si",
+      "meaning": "Super Copilot / 超级副驾驶与智能副手",
+      "value_tier": "S 级 (商业产品命名天花板)"
+    },
+    {
+      "domain": "superstack.si",
+      "meaning": "Super Stack / 超级智能全栈基础设施",
+      "value_tier": "S 级 (开发者与云平台)"
+    },
+    {
+      "domain": "supermatrix.si",
+      "meaning": "Super Matrix / 超级母体与智能网络",
+      "value_tier": "A+ 级 (科幻与算力网络感)"
+    },
+    {
+      "domain": "codeai.si",
+      "meaning": "Code AI / 代码超级智能",
+      "value_tier": "A+ 级 (高商业转化价值)"
+    },
+    {
+      "domain": "medai.si",
+      "meaning": "Med AI / 医疗健康超级智能",
+      "value_tier": "A+ 级 (高溢价垂直行业)"
+    },
+    {
+      "domain": "runai.si",
+      "meaning": "Run AI / 算力执行与运行引擎",
+      "value_tier": "A+ 级 (极简动词组合)"
+    },
+    {
+      "domain": "labai.si",
+      "meaning": "Lab AI / 智能实验室",
+      "value_tier": "A+ 级 (研发机构命名)"
+    },
+    {
+      "domain": "omnimodel.si",
+      "meaning": "Omni Model / 全模态大模型",
+      "value_tier": "A 级 (前沿模型技术词)"
+    },
+    {
+      "domain": "worldagent.si",
+      "meaning": "World Agent / 世界模型智能体",
+      "value_tier": "A 级 (前沿智能体概念)"
+    },
+    {
+      "domain": "siliconmind.si",
+      "meaning": "Silicon Mind / 硅基心智与超级智能",
+      "value_tier": "A 级 (哲学与科技意象)"
+    },
+    {
+      "domain": "superhumanai.si",
+      "meaning": "Superhuman AI / 超人类超级智能",
+      "value_tier": "A 级 (终极智能定义)"
+    },
+    {
+      "domain": "supersystems.si",
+      "meaning": "Super Systems / 超级智能系统",
+      "value_tier": "A 级 (企业级科技集团标)"
+    },
+    {
+      "domain": "superdeveloper.si",
+      "meaning": "Super Developer / 超级工程师开发平台",
+      "value_tier": "A 级 (开发者生产力工具)"
+    },
+    {
+      "domain": "supercoding.si",
+      "meaning": "Super Coding / 超级编程与代码助手",
+      "value_tier": "A 级 (AI 编程场景)"
+    },
+    {
+      "domain": "trueintelligence.si",
+      "meaning": "True Intelligence / 真正的超级智能",
+      "value_tier": "B+ 级 (品牌宣言感)"
+    },
+    {
+      "domain": "syntheticai.si",
+      "meaning": "Synthetic AI / 合成数据与合成智能",
+      "value_tier": "B+ 级 (前沿技术概念)"
+    },
+    {
+      "domain": "pureai.si",
+      "meaning": "Pure AI / 纯粹人工智能",
+      "value_tier": "B+ 级 (高辨识度短词)"
+    },
+    {
+      "domain": "baseai.si",
+      "meaning": "Base AI / 基础智能与底座大模型",
+      "value_tier": "B+ 级 (基座模型定位)"
+    }
   ]
 }
